@@ -61,12 +61,12 @@ export class Service{
     //Method to deletePost
     async deletePost(slug) {
         try {
-            return await this.databases.deleteDocument(
+            await this.databases.deleteDocument(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 slug
-            )
-            return true
+            );
+            return true;
         } catch (error) {
             console.log("Appwrite service :: deletePost :: error", error);
             return false
@@ -119,12 +119,12 @@ try {
     /// File delete file
 async deleteFile(fileId){
         try {
-            return await this.bucket.deleteFile(
+            await this.bucket.deleteFile(
                 conf.appwriteBucketId,
                 ID.unique(),
                 fileId
-                return true
-            )
+            );
+            return true;
         } catch (error) {
             console.log("Appwrite service :: deleteFile :: error", error);
             return false
@@ -145,4 +145,4 @@ async deleteFile(fileId){
 // object 
 const service = new Service()
 
-export default Service
+export default service

@@ -14,28 +14,19 @@ export class AuthService {
 
     }
 
-    async createAccount({email, password, name})  {
-        try {
+    async createAccount({email, password, name}) {
         const userAccount = await this.account.create(ID.unique(), email,
             password, name);
-            if (userAccount) {
-                // call another method
+        if (userAccount) {
+            // call another method
             return this.login({email, password});
-            } else {
-                return userAccount;
-            }
-        } catch (error) {
-        throw error;
+        } else {
+            return userAccount;
         }
     }
 
     async login({email, password}) {
-        try {
-        return await this.account.createEmailSession
-        (email, password);
-        } catch (error) {
-            throw error;
-        }
+        return await this.account.createEmailSession(email, password);
     }
 
     async getCurrentUser() {
