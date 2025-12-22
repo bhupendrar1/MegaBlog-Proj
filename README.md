@@ -4,8 +4,9 @@ MegaBlog - A Full-Stack Blog Application
 A production-ready blogging platform built with React, Redux Toolkit, and Appwrite. This project features a full CRUD system, user authentication, and image management.
 
 
-🚀 Features
-    * Complete Authentication: Secure Sign Up, Login, and Logout functionality powered by Appwrite Auth.
+🚀 Features:
+
+   * Complete Authentication: Secure Sign Up, Login, and Logout functionality powered by Appwrite Auth.
 
    * CRUD Operations: Users can create, read, update, and delete blog posts.
 
@@ -21,6 +22,7 @@ A production-ready blogging platform built with React, Redux Toolkit, and Appwri
      
 
 🛠️ Tech Stack
+
    ➡️ Frontend: React, Tailwind CSS.
 
    ➡️ State Management: Redux Toolkit.
@@ -34,7 +36,8 @@ A production-ready blogging platform built with React, Redux Toolkit, and Appwri
    ➡️ Rich Text Editor: @tinymce/tinymce-react.
    
 
-⚙️ Environment Variables
+⚙️ Environment Variables:
+
 To run this project, you will need to add the following environment variables to your .env file in the root directory:
 
    VITE_APPWRITE_URL="https://cloud.appwrite.io/v1"
@@ -47,7 +50,8 @@ To run this project, you will need to add the following environment variables to
    
    VITE_BUCKET_ID=""
 
-📦 Installation
+📦 Installation:
+
    1. Clone the repository:
         git clone <your-repo-link>
          cd MegaBlog
@@ -60,7 +64,8 @@ To run this project, you will need to add the following environment variables to
 
 
 
-🛡️ Security
+🛡️ Security:
+
    * Ensure your .env file is added to your .gitignore before pushing to public repositories.
 
    * The project uses a Protected (AuthLayout) component to prevent unauthorized access to post-creation and editing pages.
