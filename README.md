@@ -34,9 +34,13 @@ A production-ready blogging platform built with React, Redux Toolkit, and Appwri
 To run this project, you will need to add the following environment variables to your .env file in the root directory:
 
    VITE_APPWRITE_URL="https://cloud.appwrite.io/v1"
+   
    VITE_PROJECT_ID=""
+   
    VITE_DATABASE_ID=""
+   
    VITE_COLLECTION_ID=""
+   
    VITE_BUCKET_ID=""
 
 📦 Installation
