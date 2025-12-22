@@ -1,5 +1,6 @@
 
 MegaBlog - A Full-Stack Blog Application
+
 A production-ready blogging platform built with React, Redux Toolkit, and Appwrite. This project features a full CRUD system, user authentication, and image management.
 
 
